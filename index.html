@@ -43,30 +43,42 @@
   right: 0;
 }
 
-ul{
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #f5f5f5;
+  background-color: #333;
 }
 
-li{
-  float:left;
+li {
+  float: left;
+  border-right:1px solid #bbb;
 }
 
-li{
+li:last-child {
+  border-right: none;
+}
+
+li a {
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 25px;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+li a:hover:not(.active) {
+  background-color: #bbb;
 }
 
 .active{
   font-family:Arial;
-  font-size:30px;
+  font-size:20px;
 }
 
 f{
@@ -85,6 +97,34 @@ h1{
 body{
   font-family: Arail;
 }
+
+/* #feedback{
+  text-align:center;
+}
+
+#type{
+  height:30px;
+}
+
+#ok{
+  height:40px;
+  width:200px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+#ok:hover{
+  background-color: #f4822b;
+} */
+
+#fut{
+  text-align:center;
+}
+}
     </style>    
     <title>Just The Bot</title>
     <link rel='icon' href="https://cdn.discordapp.com/avatars/772285245923917862/728ad2537350b0f98d3f7b65f42730a9.png?size=128">
@@ -99,8 +139,9 @@ body{
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <ul>
-      <li><a class="active">Just The Bot |</a></li>
+  <ul id='nav'>
+      <li><a class="active">Just The Bot </a></li>
+      <li class="home"><a href="">首頁</a></li>
       <li><a href="https://discord.gg/utpxQN4U5M">支援</a></li>
   </ul>
         <div id='words'>
@@ -108,5 +149,52 @@ body{
             <h2 id='words'>點擊邀請至伺服器</h2>
             <button id='words' class="button" style="vertical-align:middle" ><a href="https://discord.com/oauth2/authorize?client_id=772285245923917862&permissions=0&scope=bot%20applications.commands"><span>邀請 </span></button></a>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id='fut'>
+          <h1>疫情查詢功能</h1>
+          <img src="corona.png">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1>天氣查詢功能</h1>
+          <img src="weather.png">
+
+        </div>
+        <!-- <div id='feedback'>
+          <h1>建議</h1>
+          <h2>讓機器人變得更好</h2>
+          <p>建議類別</p>
+          <input id='type' list="browsers" name="type" size = "30">
+          <datalist id="browsers">
+          <option value="Bug回報">
+          <option value="新增指令">
+          <option value="其他">
+          </datalist>
+          <br>
+          <p>建議內容</p>
+          <textarea id='mess' name="message" style="width:200px; height:200px;"></textarea>
+          <br>
+          <button id='ok'>完成</button>
+        </div> -->
 </body>
 </html>
