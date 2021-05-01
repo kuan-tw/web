@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  padding: 50px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#words{
+    text-align: center;
+    padding: 50px; 
+}
+
+#fa{
+    padding: 200px;
+}
+
+f{
+    font-size: 300px;
+}
+    </style>    
+    <title>Just The Bot</title>
+    <link rel='icon' href="https://cdn.discordapp.com/avatars/772285245923917862/728ad2537350b0f98d3f7b65f42730a9.png?size=128">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="nav navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Just The Bot</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a data-toggle="tab" href='/coming soon'></a></li>
+                <li><a data-toggle="tab" href='/coming soon'></a></li>
+                <li><a data-toggle="tab" href='/coming soon'></a></li>
+                <li><a data-toggle="tab" href="https://discord.gg/utpxQN4U5M">支援</a></li>
+            </ul>
+        </div>
+    </nav>    
+        <div class="tab-content" id='words'>
+            <h1 id='words'>Just The Bot</h1>
+            <h2 id='words'>點擊邀請至伺服器</h2>
+            <button id='words' class="button" style="vertical-align:middle" ><a href="https://discord.com/oauth2/authorize?client_id=772285245923917862&permissions=0&scope=bot%20applications.commands"><span>邀請 </span></button></a>
+        </div>
+        <div class="tab-content" id='fa'>
+            <ul>
+            <li id='f'><h1>疫情國家查詢功能</li></h1>
+            <li id='f'><h1>天氣查詢功能</li></h1>
+            </ul>   
+        </div>
+</body>
+</html>
