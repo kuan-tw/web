@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
+  <style>
     .button {
   display: inline-block;
   border-radius: 4px;
@@ -48,12 +48,14 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: ;
+  border: 2px solid #eddfdf;
+  border-radius: 5px;
 }
 
 li {
   float: left;
-  border-right:1px solid #bbb;
+  border-right:1px solid #aaa;
 }
 
 li:last-child {
@@ -62,14 +64,14 @@ li:last-child {
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #ccc;
 }
 
 li a:hover:not(.active) {
@@ -107,8 +109,16 @@ h2{
   font-family:Arail;
 }
 
-/* #type{
-  height:30px;
+#info{
+  text-align: center;
+  display:none;
+}
+#info h2{
+  text-align:left;
+}
+#info h3{ 
+  text-align:left;
+  font-family:Lucida Console;
 }
 
 #ok{
@@ -130,26 +140,28 @@ h2{
   text-align:center;
 }
 }
-    </style>    
-    <title>Just The Bot</title>
-    <link rel='icon' href="https://cdn.discordapp.com/avatars/772285245923917862/728ad2537350b0f98d3f7b65f42730a9.png?size=128">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-autohidingnavbar/4.0.0/jquery.bootstrap-autohidingnavbar.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.4.0/css/bootstrap-rtl.min.css"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</style>    
+<title>Just The Bot</title>
+<link rel='icon' href="https://cdn.discordapp.com/avatars/772285245923917862/728ad2537350b0f98d3f7b65f42730a9.png?size=128">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-autohidingnavbar/4.0.0/jquery.bootstrap-autohidingnavbar.min.js"></script>
+<script>
+  $('.info').click(function(){
+    $('#info').show()
+  })
+</script>
 </head>
 <body>
   <ul id='nav'>
       <li><a class="active">Just The Bot </a></li>
       <li class="home"><a href="">首頁</a></li>
-      <li><a href="https://discord.gg/utpxQN4U5M">支援</a></li>
+      <li><a href="https://discord.gg/utpxQN4U5M">支援
+      </a></li>
+      <li class='info'><a href=''>關於</a></li>
   </ul>
-        <div id='words'>
+        <div id='words' class='main'>
             <h1 id='words'>Just The Bot</h1>
             <h2 id='words'>點擊邀請至伺服器</h2>
             <button id='words' class="button" style="vertical-align:middle" ><a href="https://discord.com/oauth2/authorize?client_id=772285245923917862&permissions=0&scope=bot%20applications.commands"><span>邀請 </span></button></a>
@@ -166,7 +178,7 @@ h2{
         <br>
         <br>
         <br>
-        <div id='fut'>
+        <div id='fut' class='main'>
           <h1>疫情查詢功能</h1>
           <img src="corona.png">
           <br>
@@ -186,9 +198,15 @@ h2{
 
         </div>
 
-        <div id="feedback">
+        <div id="feedback" class='main'>
           <h1>建議</h1>
           <h2>COMING SOON</h2>
+        </div>
+        <hr>
+        <div id='info'>
+            <h1>關於機器人
+            <h2>開發者
+            <h3>kuanTW#6503
         </div>
         <!-- <div id='feedback'>
           <h1>建議</h1>
@@ -206,5 +224,6 @@ h2{
           <br>
           <button id='ok'>完成</button>
         </div> -->
+    
 </body>
 </html>
